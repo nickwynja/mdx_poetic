@@ -18,4 +18,4 @@ This is just some normal text that is prose. It might have some _markdown_.
 And then this is some **more** markdown that follows.
 """
 
-print(markdown.markdown(md, extensions=['fenced_code', PoeticExtension()]))
+print(markdown.markdown(md, extensions=[PoeticExtension()]))
