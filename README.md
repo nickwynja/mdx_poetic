@@ -13,8 +13,8 @@ This is just some normal text that is prose. It might have some _markdown_.
     line of a poem
 
     and this is _another_
-    stanza of a poem
-    with **markdown** in it
+    stanza of a poem that has a really long line which will wrap
+    and more **markdown** in it
 
 |||
 
@@ -33,7 +33,7 @@ Running that will give you an output like this:
 <div class="mdx-poem--line">line of a poem</div>
 </div><div class="mdx-poem--stanza">
 <div class="mdx-poem--line">and this is <em>another</em></div>
-<div class="mdx-poem--line">stanza of a poem</div>
+<div class="mdx-poem--line">stanza of a poem that has a really long line which will wrap</div>
 <div class="mdx-poem--line">with <strong>markdown</strong> in it</div>
 </div></div></p>
 <p>And then this is some <strong>more</strong> markdown that follows.</p>
