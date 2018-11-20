@@ -58,4 +58,4 @@ But that won't be too useful without the help of some CSS:
 
 This will give you a nice clean result where `<div class="mdx-poem">` will be indented slightly, you get a line in between stanzas, and any wrapped lines will be indented under the beginning of the line:
 
-![example](example.png)
+![example](https://github.com/nickwynja/mdx_poetic/raw/master/example.png)
