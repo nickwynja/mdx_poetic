@@ -1,3 +1,9 @@
+## Install
+
+```
+pip install mdx-poetic
+```
+
 ## Usage
 
 ```python
@@ -59,3 +65,12 @@ But that won't be too useful without the help of some CSS:
 This will give you a nice clean result where `<div class="mdx-poem">` will be indented slightly, you get a line in between stanzas, and any wrapped lines will be indented under the beginning of the line:
 
 ![example](https://github.com/nickwynja/mdx_poetic/raw/master/example.png)
+
+### Developent
+
+For pushlishing to PyPi:
+
+```
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
+```
