@@ -1,7 +1,7 @@
 ## Install
 
 ```
-pip install mdx-poetic
+pip install mdx_poetic
 ```
 
 ## Usage
