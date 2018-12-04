@@ -10,7 +10,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/nickwynja/mdx_poetic',
-    version='0.2',
+    version='0.5',
     py_modules=['mdx_poetic'],
     install_requires = ['markdown>=2.5'],
 )
