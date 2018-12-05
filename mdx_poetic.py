@@ -11,8 +11,8 @@ class PoeticExtension(Extension):
 
 class PoemFormatter(Preprocessor):
     def run(self, lines):
-        open_syntax = "|||:"
-        close_syntax = "|||"
+        open_syntax = "```poem"
+        close_syntax = "```"
         out = []
         inside_poem = False
         for idx, line in enumerate(lines):

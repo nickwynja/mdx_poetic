@@ -6,14 +6,14 @@ pip install mdx_poetic
 
 ## Usage
 
-```python
+````python
 import markdown
 from mdx_poetic import PoeticExtension
 
 md = """
 This is just some normal text that is prose. It might have some _markdown_.
 
-|||:
+```poem
 
     this is a
     line of a poem
@@ -22,13 +22,13 @@ This is just some normal text that is prose. It might have some _markdown_.
     stanza of a poem that has a really long line which will wrap
     and more **markdown** in it
 
-|||
+```
 
 And then this is some **more** markdown that follows.
 """
 
 print(markdown.markdown(md, extensions=[PoeticExtension()]))
-```
+````
 
 Running that will give you an output like this:
 
