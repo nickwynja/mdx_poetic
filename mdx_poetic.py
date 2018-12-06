@@ -11,17 +11,20 @@ class PoeticExtension(Extension):
 
 class PoemFormatter(Preprocessor):
     def run(self, lines):
-        open_syntax = "```poem"
+        open_syntax =  re.compile("```poem|```poemItalic")
         close_syntax = "```"
         out = []
         inside_poem = False
+        style_class = ''
         for idx, line in enumerate(lines):
-            if line == open_syntax:
+            if open_syntax.match(line):
                 inside_poem = True
                 # Remove blank opening line
                 if lines[idx + 1] == '':
                     del lines[idx + 1]
-                out.append('<blockquote class="mdx-poem"><p class="mdx-peom--stanza">')
+                if "poemItalic" in line:
+                    style_class = " italic"
+                out.append('<blockquote class="mdx-poem%s"><p class="mdx-peom--stanza">' % style_class)
             elif inside_poem == True and line != close_syntax:
                 if line == '':
                     if lines[idx + 1] != close_syntax:
